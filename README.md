@@ -38,3 +38,7 @@ You can change the hyperparameters in the cell below according to your dataset. 
   --output_dir="PATH_TO_SAVE_MODEL" 
 ```
 Change the ```--dataset_name="HUGGINGFACE_DATASET_NAME"``` to a dataset containing image pairs on HuggingFace
+
+## References
+
+[Hugging Face text-to-image fine tuning documentation](https://huggingface.co/docs/diffusers/training/text2image)
