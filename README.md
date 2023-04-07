@@ -9,3 +9,5 @@ Running Stable Diffusion itself is not too demanding by today's standards, and f
 ## Data
 
 [BLIP Flowers Dataset on Hugging Face](https://huggingface.co/datasets/pranked03/flowers-blip-captions)
+
+Fine Tuning
