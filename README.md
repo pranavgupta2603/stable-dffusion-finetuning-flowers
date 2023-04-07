@@ -32,4 +32,4 @@ The code below is present in the Notebook.
   --lr_scheduler="constant" --lr_warmup_steps=0 \
   --output_dir="path-to-save-model" 
 ```
-
+Change the   ```--dataset_name="hugging-face-dataset-name"``` to a dataset containing image pairs in HuggingFace
