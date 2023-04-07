@@ -11,4 +11,22 @@ Running Stable Diffusion itself is not too demanding by today's standards, and f
 [BLIP Flowers Dataset on Hugging Face](https://huggingface.co/datasets/pranked03/flowers-blip-captions)
 
 ## Fine Tuning
-You can use the Python Notebook in the repository
+Use the [Python Notebook](https://github.com/pranavgupta2603/flowers-sd-finetuning/blob/main/flowers_sd_finetune.ipynb) in the repository
+```Python
+!accelerate launch diffusers/examples/text_to_image/train_text_to_image.py \
+  --pretrained_model_name_or_path="CompVis/stable-diffusion-v1-4" \
+  --dataset_name="pranked03/flowers-blip-captions" \
+  --use_ema \
+  --resolution=128 --center_crop --random_flip \
+  --train_batch_size=8 \
+  --gradient_accumulation_steps=2 \
+  --gradient_checkpointing \
+  --mixed_precision="fp16" \
+  --max_train_steps=1000 \
+  --learning_rate=1e-05 \
+  --max_grad_norm=1 \
+  --lr_scheduler="constant" --lr_warmup_steps=0 \
+  --output_dir="sd-flowers-model" 
+
+```
+
