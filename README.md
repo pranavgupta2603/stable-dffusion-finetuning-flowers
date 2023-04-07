@@ -14,10 +14,13 @@ If you want to create your own dataset containing **text-image pairs**, this [Gi
 
 ## Fine Tuning
 
-Use the [Python Notebook](https://github.com/pranavgupta2603/flowers-sd-finetuning/blob/main/flowers_sd_finetune.ipynb) in the repository
-The exclamation mark (!) to run shell commands or terminal commands directly from within a code cell. When you use the exclamation mark before a command, Jupyter interprets it as a shell command rather than a Python statement.
+Use the [Python Notebook](https://github.com/pranavgupta2603/flowers-sd-finetuning/blob/main/flowers_sd_finetune.ipynb) in the repository.
+
+The exclamation mark (!) is used to run shell commands or terminal commands directly from within a code cell. 
+When you use the exclamation mark before a command, Jupyter interprets it as a shell command rather than a Python statement.
 
 The code below is present in the Notebook.
+You can change the hyperparameters in the cell below according to your dataset. This configuration works well with most stable diffusion finetuning problems.
 ```Python
 !accelerate launch diffusers/examples/text_to_image/train_text_to_image.py \
   --pretrained_model_name_or_path="CompVis/stable-diffusion-v1-4" \
