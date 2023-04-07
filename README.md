@@ -13,6 +13,7 @@ Running Stable Diffusion itself is not too demanding by today's standards, and f
 If you want to create your own dataset containing **text-image pairs**, this [Github Repository](https://github.com/pranavgupta2603/BLIP-flower-captioning) of mine will help you out.
 
 ## Fine Tuning
+
 Use the [Python Notebook](https://github.com/pranavgupta2603/flowers-sd-finetuning/blob/main/flowers_sd_finetune.ipynb) in the repository
 ---
 The exclamation mark (!) to run shell commands or terminal commands directly from within a code cell. When you use the exclamation mark before a command, Jupyter interprets it as a shell command rather than a Python statement.
