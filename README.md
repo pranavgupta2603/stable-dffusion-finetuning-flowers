@@ -12,10 +12,14 @@ Running Stable Diffusion itself is not too demanding by today's standards, and f
 
 ## Fine Tuning
 Use the [Python Notebook](https://github.com/pranavgupta2603/flowers-sd-finetuning/blob/main/flowers_sd_finetune.ipynb) in the repository
+---
+The exclamation mark (!) to run shell commands or terminal commands directly from within a code cell. When you use the exclamation mark before a command, Jupyter interprets it as a shell command rather than a Python statement.
+
+The code below is present in the Notebook.
 ```Python
 !accelerate launch diffusers/examples/text_to_image/train_text_to_image.py \
   --pretrained_model_name_or_path="CompVis/stable-diffusion-v1-4" \
-  --dataset_name="pranked03/flowers-blip-captions" \
+  --dataset_name="hugging-face-dataset-name" \
   --use_ema \
   --resolution=128 --center_crop --random_flip \
   --train_batch_size=8 \
@@ -26,7 +30,6 @@ Use the [Python Notebook](https://github.com/pranavgupta2603/flowers-sd-finetuni
   --learning_rate=1e-05 \
   --max_grad_norm=1 \
   --lr_scheduler="constant" --lr_warmup_steps=0 \
-  --output_dir="sd-flowers-model" 
-
+  --output_dir="path-to-save-model" 
 ```
 
