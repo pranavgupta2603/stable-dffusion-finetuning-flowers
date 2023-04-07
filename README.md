@@ -10,7 +10,7 @@ Running Stable Diffusion itself is not too demanding by today's standards, and f
 
 [BLIP Flowers Dataset on Hugging Face](https://huggingface.co/datasets/pranked03/flowers-blip-captions)
 
-If you want to create your own dataset containing text=image pairs, this [Github Repository](https://github.com/pranavgupta2603/BLIP-flower-captioning) of mine will help you out.
+If you want to create your own dataset containing ***text-image pairs****, this [Github Repository](https://github.com/pranavgupta2603/BLIP-flower-captioning) of mine will help you out.
 
 ## Fine Tuning
 Use the [Python Notebook](https://github.com/pranavgupta2603/flowers-sd-finetuning/blob/main/flowers_sd_finetune.ipynb) in the repository
