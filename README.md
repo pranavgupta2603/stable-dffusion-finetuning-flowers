@@ -5,7 +5,7 @@ In this tutorial, we'll walk through the process of fine-tuning a stable diffusi
 ## Hardware
 
 Running Stable Diffusion itself is not too demanding by today's standards, and fine tuning the model doesn't require anything like the hardware on which it was originally trained.
-Make sure your GPU has more than 24GB of storage or it will cause CUDA out of memory errors. You can use LamdaLabs, AWS, or Azure and other services to get Notebook instances on GPU powered servers.
+Make sure your GPU has more than 16B, 512 of storage or it will cause CUDA out of memory errors. You can use LamdaLabs, AWS, or Azure and other services to get Notebook instances on GPU powered servers.
 
 ## Data
 
