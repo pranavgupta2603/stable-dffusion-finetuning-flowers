@@ -38,7 +38,7 @@ You can change the hyperparameters in the cell below according to your dataset. 
   --lr_scheduler="constant" --lr_warmup_steps=0 \
   --output_dir="PATH_TO_SAVE_MODEL" 
 ```
-Change the ```--dataset_name="HUGGINGFACE_DATASET_NAME"``` to a dataset containing image pairs on HuggingFace
+Change the ```--dataset_name="HUGGINGFACE_DATASET_NAME"``` to a dataset containing text-image pairs on HuggingFace
 
 ## References
 
